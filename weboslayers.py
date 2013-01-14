@@ -9,6 +9,6 @@ webos_layers = [
 ('meta-intel',        5, 'git://git.yoctoproject.org/meta-intel.git',        'branch=danny',                ''  ),
 ('meta-sugarbay',     6, '',                                                 '',                    'meta-intel/meta-sugarbay'),
 ('meta-cedartrail',   6, '',                                                 '',                    'meta-intel/meta-cedartrail'),
-('meta-rock',        15, 'git://git.github.com/webOS-ports/meta-rock.git',   'branch=halfhalo/refactor',    ''  ),
+('meta-rock',        15, 'git://github.com/webOS-ports/meta-rock.git',   'branch=halfhalo/refactor',    ''  ),
 ('meta-slate',       16, '',                                                 '',                    'meta-rock/meta-slate'),
 ]
