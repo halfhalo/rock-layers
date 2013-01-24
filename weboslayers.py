@@ -11,4 +11,5 @@ webos_layers = [
 ('meta-cedartrail',   7, '',                                                 '',                    'meta-intel/meta-cedartrail'),
 ('meta-rock',        15, 'git://github.com/webOS-ports/meta-rock.git',   'branch=halfhalo/refactor',    ''  ),
 ('meta-slate',       16, '',                                                 '',                    'meta-rock/meta-slate'),
+('meta-envy',       16, '',                                                 '',                    'meta-rock/meta-envy'),
 ]
