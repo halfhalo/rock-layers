@@ -66,7 +66,7 @@ webos_layers = [
 #We pull in meta-java for llvm, which is soley used for mesa-dri currently
 ('meta-java',   10, 'git://github.com/woglinde/meta-java.git',        'branch=master', ''  )
 #We want the latest and greatest mesa and friends, so we pull in a layer only containing them
-('meta-mesa-upstream',   12, 'git://github.com/halfhalo/meta-mesa-upstream.git','commit=HEAD', ''  ),
+('meta-mesa-upstream',   12, 'git://github.com/halfhalo/meta-mesa-upstream.git','branch=master', ''  ),
 #meta-rock contains both meta-slate and meta-envy at the moment, so also having to finangle them.
 ('meta-rock',        15, 'git://github.com/webOS-ports/meta-rock.git','branch=halfhalo/refactor',    ''  ),
 ('meta-slate',       16, '','','@CWD@/meta-rock/meta-slate'),
