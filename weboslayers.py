@@ -54,21 +54,21 @@ Distribution = "webos"
 # of authoritative repositories on git.openembedded.org
 webos_layers = [
 #Pulling from head purely for colors.
-('bitbake',          -1, 'git://github.com/openembedded/bitbake.git',        'branch=1.16,commit=HEAD',  ''  ),
+('bitbake',          -1, 'git://github.com/openembedded/bitbake.git',        'branch=1.16',  ''  ),
 #We are pulling from HEAD instead of a fixed commit due to this: https://github.com/openembedded/oe-core/commit/3fc5923b4c8e99fe22e10fb52181c951330a12f2
-('meta',              5, 'git://github.com/openembedded/oe-core.git',        'branch=danny,commit=HEAD', ''  ),
-('meta-oe',           6, 'git://github.com/openembedded/meta-oe.git',        'branch=danny,commit=HEAD', ''  ),
+('meta',              5, 'git://github.com/openembedded/oe-core.git',        'branch=danny', ''  ),
+('meta-oe',           6, 'git://github.com/openembedded/meta-oe.git',        'branch=danny', ''  ),
 #meta-intel contains both meta-sugarbay and meta-cedartrail in it, so we have to do some finangling with them to get everything to properly load
-('meta-intel',        5, 'git://git.yoctoproject.org/meta-intel.git',        'branch=danny,commit=HEAD', ''  ),
+('meta-intel',        5, 'git://git.yoctoproject.org/meta-intel.git',        'branch=danny', ''  ),
 ('meta-sugarbay',     7, '',                                                 '',                         './meta-intel/meta-sugarbay' ),
 ('meta-cedartrail',   7, '','','./meta-intel/meta-cedartrail'),
-('meta-webos',       10, 'git://github.com/openwebos/meta-webos.git',        'commit=HEAD,branch=master', '' ),
+('meta-webos',       10, 'git://github.com/openwebos/meta-webos.git',        'commit=HEAD', '' ),
 #We pull in meta-java for llvm, which is soley used for mesa-dri currently
 #('meta-java',   10, 'git://github.com/woglinde/meta-java.git',        'commit=HEAD,branch=master', ''  )
 #We want the latest and greatest mesa and friends, so we pull in a layer only containing them
-('meta-mesa-upstream',   12, 'git://github.com/halfhalo/meta-mesa-upstream.git','commit=HEAD,branch=master', ''  ),
+('meta-mesa-upstream',   12, 'git://github.com/halfhalo/meta-mesa-upstream.git','commit=HEAD', ''  ),
 #meta-rock contains both meta-slate and meta-envy at the moment, so also having to finangle them.
-('meta-rock',        15, 'git://github.com/webOS-ports/meta-rock.git','branch=halfhalo/refactor,commit=HEAD',    ''  ),
+('meta-rock',        15, 'git://github.com/webOS-ports/meta-rock.git','branch=halfhalo/refactor',    ''  ),
 ('meta-slate',       16, '','','./meta-rock/meta-slate'),
 ('meta-envy',       16, '','','./meta-rock/meta-envy'),
 #('meta-networking',   6, 'git://github.com/openembedded/meta-oe.git',        '', ''  ),
