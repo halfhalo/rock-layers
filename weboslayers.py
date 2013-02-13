@@ -64,7 +64,7 @@ webos_layers = [
 ('meta-cedartrail',   7, '','','@CWD@/meta-intel/meta-cedartrail'),
 ('meta-webos',       10, 'git://github.com/openwebos/meta-webos.git',        'commit=HEAD', '' ),
 #We pull in meta-java for llvm, which is soley used for mesa-dri currently
-('meta-java',   10, 'git://github.com/woglinde/meta-java.git',        'branch=master', ''  )
+('meta-java',   10, 'git://github.com/woglinde/meta-java.git',        'branch=master', ''  ),
 #We want the latest and greatest mesa and friends, so we pull in a layer only containing them
 ('meta-mesa-upstream',   12, 'git://github.com/halfhalo/meta-mesa-upstream.git','branch=master', ''  ),
 #meta-rock contains both meta-slate and meta-envy at the moment, so also having to finangle them.
