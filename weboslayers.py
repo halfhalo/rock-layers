@@ -62,7 +62,7 @@ webos_layers = [
 ('meta-intel',        5, 'git://git.yoctoproject.org/meta-intel.git',        'branch=danny', ''  ),
 ('meta-sugarbay',     7, '',                                                 '',                         '@CWD@/meta-intel/meta-sugarbay' ),
 ('meta-cedartrail',   7, '','','@CWD@/meta-intel/meta-cedartrail'),
-('meta-webos',       10, 'git://github.com/openwebos/meta-webos.git',        'branch-master', '' ),
+('meta-webos',       10, 'git://github.com/openwebos/meta-webos.git',        'branch=master', '' ),
 #We pull in meta-java for llvm, which is soley used for mesa-dri currently
 ('meta-java',   10, 'git://github.com/woglinde/meta-java.git',        'branch=master', ''  ),
 #We want the latest and greatest mesa and friends, so we pull in a layer only containing them
