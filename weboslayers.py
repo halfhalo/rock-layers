@@ -57,9 +57,10 @@ webos_layers = [
 ('bitbake',          -1, 'git://github.com/openembedded/bitbake.git',        'branch=1.16',  ''  ),
 #We are pulling from HEAD instead of a fixed commit due to this: https://github.com/openembedded/oe-core/commit/3fc5923b4c8e99fe22e10fb52181c951330a12f2
 ('meta',              5, 'git://github.com/openembedded/oe-core.git',        'branch=danny', ''  ),
-('meta-oe',           6, 'git://github.com/openembedded/meta-oe.git',        'commit=afc5b9445b08c7fc54c048a018ef033db27f4cec', ''  ),
+('meta-oe',           6, 'git://github.com/openembedded/meta-oe.git',        'branch=danny', ''  ),
 #meta-intel contains both meta-sugarbay and meta-cedartrail in it, so we have to do some finangling with them to get everything to properly load
 ('meta-intel',        5, 'git://git.yoctoproject.org/meta-intel.git',        'branch=danny', ''  ),
+('meta-qt5',        5, 'git://github.com/meta-qt5/meta-qt5.git',        'branch=master', ''  ),
 ('meta-sugarbay',     7, '',                                                 '',                         '@CWD@/meta-intel/meta-sugarbay' ),
 ('meta-cedartrail',   7, '','','@CWD@/meta-intel/meta-cedartrail'),
 ('meta-webos',       10, 'git://github.com/openwebos/meta-webos.git',        'branch=master', '' ),
